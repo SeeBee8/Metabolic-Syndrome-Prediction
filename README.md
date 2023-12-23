@@ -17,9 +17,12 @@ The goal of this projest is to use a series of risk factors, and create a model 
 The target for this dataset is the metabolic syndrome feature.  SEQN will be set as the index as it is a unique identifier.  There are 2401 records representing a person and their attributes of which there are 13. There are some columns that have null values needing to be imputed. The feature 'UrAlbCr' was not defined and and assumption was made as to what is being represented based on the NIH and Cleavland Clinic websites. Aside from "UrAlbCr" not being defined, there don't appear to be any chanllenges with the dataset that would interfere with modeling.
 
 --------
+
 **Using the dataset found on Dataworld:** 
 https://data.world/informatics-edu/metabolic-syndrome-prediction
+
 ---------
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
