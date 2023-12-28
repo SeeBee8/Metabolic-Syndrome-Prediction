@@ -147,7 +147,13 @@ The target for this dataset is the metabolic syndrome feature.  SEQN will be set
 -----
 ### Explanatory Analysis:
 
-The model found that BMI and waist size were reliably able to predict Metabolic Syndrome.  The 
+
+
+The model found that blood glucose levels and triglyceride levels were reliably able to predict Metabolic Syndrome.  However, using multiple features together decreased the liklihood of false positives.
+
+After looking at the model's performance and the importance of the features, looking for high triglyceride and high glucose levels are the best predictor of Metabolic Syndrome.  Additional possible predictors are low HDL, higher waist sizes, and higher BMIs in combination with the high trigylceride and glucose levels.
+
+The DecisionTree model was used in this machine learning exercise.  The model performed with an 86% accuracy rating including only the top 9 features which was equivalent to the default model.  Using less features did not improve the model's performance.  It is also recommended to use the top 10 features together to make a prediction of metabolic syndrome in patients.
 
 
 
