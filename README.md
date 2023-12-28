@@ -147,9 +147,15 @@ The target for this dataset is the metabolic syndrome feature.  SEQN will be set
 -----
 ### Explanatory Analysis:
 
-
-
 The model found that blood glucose levels and triglyceride levels were reliably able to predict Metabolic Syndrome.  However, using multiple features together decreased the liklihood of false positives.
+
+![Screenshot 2023-12-28 121027](https://github.com/SeeBee8/Metabolic-Syndrome-Prediction/assets/141530991/bf764406-fb5e-4032-b3d8-142df521b62a)
+
+This plot shows the relationship between Glucose and Metabolic Syndrome.  As blood glucose levels increase the liklihood of having metabolic syndrome is increased.  The following plot shows a similar relationship between triglyceride levels and metabolic syndrome.  Both of these features are good predictors of metabolic syndrome.
+
+![Screenshot 2023-12-28 121048](https://github.com/SeeBee8/Metabolic-Syndrome-Prediction/assets/141530991/a389f5db-e406-47c2-8af1-e014317f8d07)
+
+
 
 After looking at the model's performance and the importance of the features, looking for high triglyceride and high glucose levels are the best predictor of Metabolic Syndrome.  Additional possible predictors are low HDL, higher waist sizes, and higher BMIs in combination with the high trigylceride and glucose levels.
 
