@@ -143,6 +143,12 @@ The target for this dataset is the metabolic syndrome feature.  SEQN will be set
   </tr>
 </tbody>
 </table>
+-----
+
+### Feature Engineering:
+In order for the model to identify Metabolic Syndrome, there were a few approaches taken to eliminate features that were not as predictive.  Permutation importance was one way the features were reduced to the 10 most likely features to have an effect on the identification of Metabolic Syndrome.  These features were then reduced using a threshold of 0.02.  
+
+![image](https://github.com/SeeBee8/Metabolic-Syndrome-Prediction/assets/141530991/e2e19e6a-94b3-4aeb-8a89-823b06b41adb)
 
 -----
 ### Explanatory Analysis:
@@ -159,13 +165,21 @@ The following plot shows a similar relationship between triglyceride levels and 
 
 
 ------------------------------------------------------------------------------------
-After looking at the model's performance and the importance of the features, looking for high triglyceride and high glucose levels are the best predictor of Metabolic Syndrome.  Additional possible predictors are low HDL, higher waist sizes, and higher BMIs in combination with the high trigylceride and glucose levels.
+#### Neural Network:
 
-The DecisionTree model was used in this machine learning exercise.  The model performed with an 86% accuracy rating including only the top 9 features which was equivalent to the default model.  Using less features did not improve the model's performance.  It is also recommended to use the top 10 features together to make a prediction of metabolic syndrome in patients.
+A neural network model was built to improve results.  This was a dense neural network using Tensorflow and Keras.  The binary classification model had 3 layers that was further modified to include early stopping and a dropout layer.  The final model was tuned using the Keras tuner.
+----------------------------------------------------------------------------------------
 
 
+--------
 
+### Final Evaluation:
 
+The best model for this dataset was the Decision Tree Classifier model using permutation selction.  This model will perform with an 87% accuracy at identifying Metabolic Syndrome.  The output of this model can be used to aid in diagnosis along with other medical tests.  
+
+![image](https://github.com/SeeBee8/Metabolic-Syndrome-Prediction/assets/141530991/6da1a329-deaf-41a4-9259-7c1697fa6baa)
+
+After looking at the model's performance and the importance of the features, looking for high triglyceride and high glucose levels are the best predictor of Metabolic Syndrome.  Additional possible predictors are low HDL, higher waist sizes, and higher BMIs in combination with the high trigylceride and glucose levels.  It is also noted that using less than the top 10 features did not improve the models performance.
 
 -----------------------
 The following sources were used to research the dataset and create this dictionary. The only issue was the 'UrAlbCre' feature. After researching the various tests done for metabolic syndrome and the values provided, it is assumed that 'UrAlbCr' is UACR. UACR is a measure of the ratio of albumin to creatin in urine, and is used to detect kidney disease.
