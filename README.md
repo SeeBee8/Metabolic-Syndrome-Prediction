@@ -14,7 +14,7 @@ According to the Mayo Clinic, metabolic syndrome will  cause an increase in the 
 
 The goal of this projest is to use a series of risk factors, and create a model that can predict the likihood of metabolic syndrome in patients. The dataset provided came from the NHANES initiative.  It contains variables including: waist circumference, triglyerades, cholesterol levels, race, income, uric acid levels, age, gender, marital status, body mass index, urine albumin grades and rates, and blood glucose levels.
 
-The target for this dataset is the metabolic syndrome feature.  SEQN will be set as the index as it is a unique identifier.  There are 2401 records representing a person and their attributes of which there are 13. There are some columns that have null values needing to be imputed. The feature 'UrAlbCr' was not defined and and assumption was made as to what is being represented based on the NIH and Cleavland Clinic websites. Aside from "UrAlbCr" not being defined, there don't appear to be any chanllenges with the dataset that would interfere with modeling.
+The target for this dataset is the metabolic syndrome feature.  SEQN will be set as the index as it is a unique identifier.  There are 2401 records representing a person and their attributes of which there are 13. There are some columns that have null values needing to be imputed. The feature 'UrAlbCr' was not defined and and assumption was made as to what is being represented based on the NIH and Cleavland Clinic websites. Aside from "UrAlbCr" not being defined, there don't appear to be any challenges with the dataset that interfere with modeling.
 
 --------
 
